@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Create Job!!!</div>
+                <div class="panel-body">
+                    <form role="form" method="post" >
+                    
+                        <label for="companyname">companyname</label>
+                        <input type="text" id="companyname" class="form-control" ng-model="job.companyname"  placeholder="Example: John">
+              	          
+                        <label for="designation" class="m-t-10">designation</label>
+                        <input type="text" id="designation" class="form-control" ng-model="job.designation" >
+                        
+                        <label for="details" class="m-t-10">details</label>
+                        <input type="text" id="details" class="form-control" ng-model="job.details" placeholder="">
+                        
+                        <label for="address" class="m-t-10">address</label>
+                        <input type="text" id="address" class="form-control" ng-model="job.address" placeholder="">
+                        
+                      
+                        <center><input type="submit" class="btn btn-primary m-t-10" ng-click="saveJob()" id="submitbtn" name="submit" value="Create Job"></center>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

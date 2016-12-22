@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Create Blog!!!</div>
+                <div class="panel-body">
+                    <form role="form" method="post" >
+                    
+                        <label for="blogname">blogname</label>
+                        <input type="text" id="blogname" class="form-control" ng-model="blog.blogname"  placeholder="Example: John">
+              	          
+                        <label for="blogcontent" class="m-t-10">blogcontent</label>
+                        <input type="text" id="blogcontent" class="form-control" ng-model="blog.blogcontent" >
+                        
+                        <label for="blogdate" class="m-t-10">blogdate</label>
+                        <input type="text" id="blogdate" class="form-control" ng-model="blog.blogdate" placeholder="">
+                        
+                      
+                        <center><input type="submit" class="btn btn-primary m-t-10" ng-click="saveBlog()" id="submitbtn" name="submit" value="Create Blog"></center>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
